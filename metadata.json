@@ -1,0 +1,8 @@
+{
+  "name": "Chess Quest: Learn & Play",
+  "description": "A gamified, bilingual (English & Roman Urdu) chess learning adventure with interactive levels, mascot coach, visual paths, and AI practice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
