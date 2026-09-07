@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg sm:text-xl font-black tracking-tight uppercase text-white">
-                  CheckMate <span className="text-indigo-400">Adventure</span>
+                  CheckMate <span className="header-adventure-text">Adventure</span>
                 </h1>
                 <span className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold px-2 py-0.5 rounded bg-zinc-900 border border-slate-800 hidden sm:inline-block">
                   Level {progress.unlockedLevel}
