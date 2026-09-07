@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center gap-3.5">
             <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(79,70,229,0.5)] flex-shrink-0">
-              <span className="text-2xl font-black leading-none text-white select-none">♞</span>
+              <span className="knight-logo text-2xl font-black leading-none text-white select-none">♞</span>
             </div>
             <div>
               <div className="flex items-center gap-2">
