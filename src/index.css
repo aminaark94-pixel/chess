@@ -63,3 +63,40 @@
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
+
+/* Prancing knight logo animation (header horse icon) */
+.knight-logo {
+  display: inline-block;
+  transform-origin: 65% 95%;
+  animation: knight-prance 2.6s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+@keyframes knight-prance {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0) scale(1);
+    filter: drop-shadow(0 0 0px rgba(199, 210, 254, 0));
+  }
+  15% {
+    transform: rotate(-14deg) translateY(-1px) scale(1.04);
+  }
+  30% {
+    transform: rotate(8deg) translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(199, 210, 254, 0.9));
+  }
+  45% {
+    transform: rotate(-5deg) translateY(-2px) scale(1.05);
+    filter: drop-shadow(0 0 4px rgba(199, 210, 254, 0.5));
+  }
+  60% {
+    transform: rotate(3deg) translateY(0) scale(1.02);
+  }
+  75% {
+    transform: rotate(0deg) translateY(0) scale(1);
+    filter: drop-shadow(0 0 0px rgba(199, 210, 254, 0));
+  }
+}
+
+.knight-logo:hover {
+  animation-duration: 0.9s;
+}
