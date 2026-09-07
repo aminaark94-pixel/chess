@@ -41,3 +41,25 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 140, 0, 0.7);
 }
+
+/* Animated header "Adventure" text */
+.header-adventure-text {
+  background: linear-gradient(90deg, #818cf8, #c4b5fd, #818cf8, #6366f1);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: adventure-shimmer 3s ease-in-out infinite, adventure-pulse 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes adventure-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes adventure-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
